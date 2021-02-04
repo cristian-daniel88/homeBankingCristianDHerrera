@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeBanking - Registrarse</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+          <form id="register-form">
+            <div class="content__user">
+              <span id="register-error"></span>
+              <p>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" />
+              </p>
+              <p>
+                  <label for="lastname">Apellido</label>
+                  <input type="text" id="lastname" />
+                </p>
+              <p>
+                <label for="user">Usuario</label>
+                <input type="text" id="user" />
+              </p>
+              <p>
+                  <label for="password">Contraseña</label>
+                  <input type="password" id="password"/>
+              </p>
+              <button type="submit">Registrar</button>
+              <span>Ya tengo cuenta, <a href="./login.html">Ingresar</a></span>
+            </div>
+          </form>
+        </div>
+      </div>
+      <script type="module" src="../../scripts/user/register.js"></script>
+</body>
+</html>

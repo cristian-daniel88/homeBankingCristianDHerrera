@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeBanking - Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <form id="login-form">
+          <div class="content__user">
+            <span id="login-error"></span>
+            <p>
+              <label for="user">Usuario</label>
+              <input type="text" id="user" />
+            </p>
+            <p>
+              <label for="password">Contraseña</label>
+              <input type="password" id="password" />
+            </p>
+            <button>Ingresar</button>
+            <button id="logout">Logout</button>
+            <span>No tengo cuenta, <a href="./register.html">Registrarme</a></span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="../../scripts/user/login.js"></script>
+  </body>
+</html>
