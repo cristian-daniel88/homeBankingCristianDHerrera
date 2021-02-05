@@ -47,6 +47,7 @@ function saveUser (e) {
         localStorage.setItem('users', users);
 
         location.href = '../../public/user/login.html'
+        localStorage.removeItem('user');
     } else {
         registerErrorElement.style.display = 'block';
         registerErrorElement.innerHTML = 'por favor complete todos los campos.'
@@ -55,4 +56,16 @@ function saveUser (e) {
 }
 
 formElement.addEventListener('submit', (e)=> saveUser(e));
+
+// para que el navegador no autocomplete el formulario
+passwoordElement.style.display = 'none';
+
+passwoordElement.addEventListener('focus', () => {
+passwoordElement.style.display = 'flex'; 
+passwoordElement.value = '1'
+setTimeout(( ) =>{
+    passwoordElement.value = ''
+} ,0 )
+})
+
 

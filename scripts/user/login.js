@@ -4,6 +4,8 @@ let passwordElement = document.getElementById('password');
 let loginErrorElement = document.getElementById('login-error');
 let logoutElement = document.getElementById('logout');
 
+
+
 loginErrorElement.style.display = 'none';
 
 let localStore = localStorage.getItem('users');
@@ -41,18 +43,53 @@ function loginUser (e) {
         }
     } else {
         loginErrorElement.style.display = 'block';
+        
         loginErrorElement.innerHTML = 'Por favor complete todos los campos.';
     }
 }
 
 
-function logOutUser (e) {
-    localStorage.removeItem('user');
-    location.href = '../../public/user/register.html'
-}
+// function logOutUser (e) {
+//     localStorage.removeItem('user');
+//     location.href = '../../public/user/register.html'
+// }
 
-logoutElement.addEventListener('click', (e)=> logOutUser(e))
+// logoutElement.addEventListener('click', (e)=> logOutUser(e))
 
 
 formElement.addEventListener('submit', (e)=> loginUser(e));
+
+
+
+// para que el navegador no autocomplete el formulario
+passwordElement.style.display = 'none';
+
+passwordElement.addEventListener('focus', () => {
+passwordElement.style.display = 'flex'; 
+passwordElement.value = '1'
+setTimeout(( ) =>{
+    passwordElement.value = ''
+} ,0 )
+})
+
+
+
+userElement.addEventListener('focus', () => {
+    userElement.style.display = 'flex'; 
+    userElement.value = '1'
+    setTimeout(( ) =>{
+        userElement.value = ''
+    } ,0 )
+    })
+    
+    
+    
+    
+    
+    
+
+
+
+
+
 
