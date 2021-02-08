@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HomeBanking - Registrarse</title>
     <link rel="stylesheet" href="../../style/user/register.css">
+    <link rel="stylesheet" href="../../style/style.css">
   </head>
   <body>
-    <h1>HomeBanking - Register</h1>
+    <h1>HomeBanking  <span class="icon-library" style="margin-left: 15px;"></span> - Register</h1>
     <div class="container">
       <div class="content">
-        <form id="register-form">
+        <form id="register-form" autocomplete="off">
           <div class="content__user">
             <span id="register-error"></span>
             <p class="p-form">
-              <input type="text" id="name" />
+              <input type="text" id="name" required/>
               <label for="name" class="lbl-nombre">
                 <span class="text-nomb"> Nombre</span>
               </label>
@@ -37,7 +38,7 @@
                 <span class="text-nomb"> Contraseña</span>
               </label>
             </p>
-            <button type="submit">Registrar</button>
+            <button>Registrar</button>
             <span class="span">Ya tengo cuenta, <a href="./login.html">Ingresar</a></span>
           </div>
         </form>

@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 h1 {
     color: #fff;
+    text-shadow: 0 0 20px green;
 }
 
 body {
@@ -100,7 +107,7 @@ body {
 }
 
 .p-form input:focus + .lbl-nombre .text-nomb, .p-form input:valid + .lbl-nombre .text-nomb  {
-    transform: translateY(-150%);
+    transform: translateY(-130%);
     font-size: 14px;
     color: #2ecece;
 }
@@ -132,13 +139,14 @@ button {
 }
 
 .span a{
-    color: #45c946;
+    color: rgb(184, 240, 170);
+    text-shadow: 0 0 20px green;
     text-decoration: none;
     text-align: center;
 }
 
 @media screen and (max-width: 500px) {
     .content__user {
-        width: 76vw;
+        width: 100%;
     }
 }

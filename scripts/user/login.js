@@ -82,7 +82,9 @@ userElement.addEventListener('focus', () => {
     } ,0 )
     })
     
-    
+
+// borrar usuario
+localStorage.removeItem('user');
     
     
     

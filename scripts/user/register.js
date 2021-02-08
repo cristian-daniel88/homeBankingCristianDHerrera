@@ -37,7 +37,8 @@ function saveUser (e) {
             cbu: uuidv4(), 
             balance: 0,
             saved : [],
-            service: []
+            service: [],
+            transaciones: [],
         }
     
         userList.push(newUser);
@@ -68,4 +69,18 @@ setTimeout(( ) =>{
 } ,0 )
 })
 
+userElement.addEventListener('focus', () => {
+    userElement.style.display = 'flex'; 
+    userElement.value = '1'
+    setTimeout(( ) =>{
+        userElement.value = ''
+    } ,0 )
+    })
 
+    
+// borrar usuario
+localStorage.removeItem('user');
+
+
+
+     

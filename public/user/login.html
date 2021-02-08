@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../style/user/login.css" />
-    <title>HomeBanking - Logi</title>
+    <link rel="stylesheet" href="../../style/style.css">
+    <title>HomeBanking - Login</title>
   </head>
   <body>
-    <h1>HomeBanking - Login</h1>
+    <h1>HomeBanking<span class="icon-library" style="margin-left: 15px;"></span> - Login</h1>
     <div class="container">
       
       <div class="content">
         
-        <form id="login-form"  >
+        <form id="login-form" autocomplete="off" >
           <div class="content__user">
             <span id="login-error"></span>
             <p class="p-form" >
@@ -22,7 +23,7 @@
               </label>
             </p>
             <p class="p-form"  >
-              <input type="password" id="password" required   />
+              <input type="password" id="password" required />
               <label for="password" class="lbl-nombre" >
                 <span class="text-nomb" id="contrase">Contraseña</span>
               </label>
@@ -39,4 +40,5 @@
     </div>
     <script type="module" src="../../scripts/user/login.js"></script>
   </body>
+
 </html>

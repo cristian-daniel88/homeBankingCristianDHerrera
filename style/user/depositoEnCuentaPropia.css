@@ -3,51 +3,148 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.off {
+    width: 100%;
+    text-align: end;
+    font-size: 35px;
+    color: #fff;
+    margin-top: -47px;
+}
+
+.off:hover {
+    cursor: pointer;
+    text-shadow: 0 0 20px rgb(128, 9, 0);
+}
 h1 {
     color: #fff;
     text-shadow: 0 0 20px green;
 }
+.bienvenido {
+    color: #fff;
+    text-align: center;
+    font-size: 25px ;
+}
 
 body {
     display: flex;
-    height: 100vh ;
-    flex-direction: column;
-    justify-content: center;
+    height: 100vh;
     align-items: center;
+    justify-content: center;
     background-color:  #0b1721;
 }
 
 .container {
-    width: 95%;
-    height: 600px;
+    height: 90%;
+    width: 90%;
     background-color: #0b1721;
-    display: flex;
-    justify-content: center;
-    
-    
-}
-
-.content {
-    width: 95%;
-    height: 88%;
-    background-color:  #0b1721;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.content__user{
-    width: 25vw;
-    height: 70vh;
+.content {
+    height: 90%;
+    width: 90%;
+    background-color: #0b1721;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index2 {
+    height: 90%;
+    width: 90%;
     background-color: #0b1721;
     display: flex;
     flex-direction: column;
-    position: relative;
-    overflow: hidden;
+    align-items: center;
+   
+   
+}
+
+.caja1 {
+    margin-bottom: 30px;
+}
+
+.caja2, .caja3 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50%; 
+    flex-wrap: wrap;
+   
+}
+
+.cajita-a, .cajita-b, .cajita-c, .cajita-d {
+    width: 400px;
+    height: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#0b1721;
+   
+   
     
 }
 
 
+
+
+.cajita-a div, .cajita-b div, .cajita-c div, .cajita-d div {
+    width: 100%;
+    height: 90%;
+   
+    border-radius: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.cajita-a div:hover, .cajita-b div:hover, .cajita-c div:hover, .cajita-d div:hover {
+    color: #168C00;
+    background: #59FF3A;
+    box-shadow: 0 0 10px #59FF3A, 0 0 40px #59FF3A, 0 0 10px #59FF3A;
+    cursor: pointer;
+}
+
+.caja4 {
+    width: 100%;
+    text-align: end;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.saldo-h3 {
+    color : #fff;
+    font-size: 25px;
+}
+
+.cbu-h3 {
+    color: #fff;
+
+}
+
+.content__user {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+#cuenta-propia-form {
+    width: 100%;
+   
+    
+}
 
 .p-form {
     width: 100%;
@@ -55,6 +152,7 @@ body {
     max-width: 400px;
     position: relative;
     overflow: hidden;
+    
 }
 
 
@@ -147,7 +245,14 @@ button {
 }
 
 @media screen and (max-width: 500px) {
-    .content__user {
-        width: 77vw;
+    .content {
+        width: 100%;
+    }
+
+    .off {
+      
+        font-size: 25px;
+        
     }
 }
+
