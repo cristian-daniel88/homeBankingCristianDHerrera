@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 *{
     font-family: 'Open Sans', sans-serif;
+    
 }
 
 .off {
@@ -211,6 +212,7 @@ body {
     color: #2ecece;
 }
 
+
 .p-form input:focus + .lbl-nombre:after,.p-form input:valid + .lbl-nombre:after {
     transform: translateX(0%);
 }
@@ -243,6 +245,28 @@ button {
     text-decoration: none;
     text-align: center;
 }
+form {
+    width: 100%;
+}
+
+.p-form-vencimiento {
+   width: 40%;
+   display: flex;
+   justify-content: space-between;
+}
+#vencimiento_input {
+    cursor: pointer;
+    background-color: rgb(199 199 199);
+    border-radius: 5px;
+    color: #0b1721;
+}
+#vencimiento_span {
+    /**color:  #2ecece; **/
+    color: #fff;
+}
+
+
+
 
 @media screen and (max-width: 500px) {
     .content {
@@ -254,17 +278,15 @@ button {
         font-size: 25px;
         
     }
-    body {
-        display: flex;
-        height: 120vh;
-       
-    }
-    .caja2 {
-        height: auto;
-    }
-    .caja4 {
-        margin-top: 50px;
-    }
+    
+.p-form-vencimiento {
+    width: 100%;
+    flex-wrap: wrap;
+   
+ }
+ .lbl-nombre-vencimiento {
+     width: 100%;
+     margin-bottom: 15px;
+ }
 }
-
 

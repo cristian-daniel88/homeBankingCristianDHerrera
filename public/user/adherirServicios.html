@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomeBanking - Depositos Cuenta propia</title>
-    <link rel="stylesheet" href="../../style/user/depositoEnCuentaPropia.css">
+    <title>HomeBanking - Depositos Adherir Servicio</title>
+    <link rel="stylesheet" href="../../style/user/adherirServicios.css">
     <link rel="stylesheet" href="../../style/style.css">
 </head>
 <body>
@@ -19,32 +19,32 @@
                         <h1>HomeBanking <span class="icon-library" style="margin-left: 15px;"></span></h1> 
                     </div>
                     <div>
-                        <p class="bienvenido" id="seccion">Deposito Cuenta Propia</p>
+                        <p class="bienvenido" id="seccion">Adherir Servicio</p>
                     </div>
                 </div>
                 <div class="caja2" id="caja2">
                     <div class="content">
         
-                        <form id="cuenta-propia-form" autocomplete="off" >
+                        <form id="adherir-servicios-form" autocomplete="off" >
                           <div class="content__user">
-                            <span id="cuenta-propia_error"></span>
+                            <span id="adherir-servicios_error"></span>
                             <p class="p-form"  >
-                            <input type="text" id="cbu-cuenta-propia_input" required />
+                            <input type="text" id="adherir-servicios_input" required />
                             <label for="number" class="lbl-nombre" >
-                              <span class="text-nomb" id="cbu-cuenta-propia_span">CBU</span>
+                              <span class="text-nomb" id="adherir-servicios_span">Nombre de Servicio*</span>
                             </label>
                           </p>
                             <p class="p-form"  >
-                              <input type="number" id="monto-cuenta-propia_input" required />
+                              <input type="number" id="monto-a-abonar_input" required />
                               <label for="number" class="lbl-nombre" >
-                                <span class="text-nomb" id="monto-cuenta-propia_span">Monto $</span>
+                                <span class="text-nomb" id="monto-a-abonar_span">Monto a abonar en pesos*</span>
                               </label>
                             </p>
-                            <p class="p-form"  >
-                              <input type="text" id="razon-cuenta-propia_input" required />
-                              <label for="number" class="lbl-nombre" >
-                                <span class="text-nomb" id="razon-cuenta-propia_span">Motivo</span>
+                            <p class="p-form-vencimiento  ">
+                              <label for="number" class="lbl-nombre-vencimiento" >
+                                <span class="text-vencimiento" id="vencimiento_span" style="margin-right: 10px;">Vencimiento*</span>
                               </label>
+                              <input type="date" id="vencimiento_input" />  
                             </p>
                             <button id='cuenta-propia-button'>Ingresar</button>
                            
@@ -61,6 +61,6 @@
             </div>
         </div>
     </div>
-    <script src="../../scripts/user/depositoEnCuentaPropia.js"></script>
+    <script src="../../scripts/user/adherirServicios.js"></script>
 </body>
 </html>

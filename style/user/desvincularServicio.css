@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.off {
+    width: 100%;
+    text-align: end;
+    font-size: 35px;
+    color: #fff;
+    margin-top: -47px;
+}
+
+.off:hover {
+    cursor: pointer;
+    text-shadow: 0 0 20px rgb(128, 9, 0);
+}
+h1 {
+    color: #fff;
+    text-shadow: 0 0 20px green;
+}
+.bienvenido {
+    color: #fff;
+    text-align: center;
+    font-size: 25px ;
+}
+
+body {
+    display: flex;
+    height: 150vh;
+    align-items: center;
+    justify-content: center;
+    background-color:  #0b1721;
+}
+
+.container {
+    height: 90%;
+    width: 90%;
+    background-color: #0b1721;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    height: 90%;
+    width: 90%;
+    background-color: #0b1721;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index2 {
+    height: 90%;
+    width: 90%;
+    background-color: #0b1721;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+   
+}
+
+form {
+    width: 100%;
+}
+
+.caja1 {
+    margin-bottom: 30px;
+}
+
+.caja2, .caja3 {
+    display: flex;
+    
+    width: 100%;
+    height: auto; 
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+   
+}
+
+#volver {
+    width: 100%;
+    text-align: end;
+    color: #fff;
+    cursor: pointer;
+    height: 50px; 
+    
+}
+
+.tarjeta {
+    min-width: 310px;
+    height: 350px;
+    color: #fff;
+    border: 1px solid #2ecece;
+    margin : 20px;
+    font-size: 25px;
+    border-radius: 20px;
+    list-style: none;
+}
+.nombre-servicio {
+    text-align: center;
+}
+.monto-servicio {
+    text-align: center;
+}
+.vencimiento-sercicio {
+    text-align: center;
+}
+
+.al-dia {
+   display: flex;
+   justify-content: center;  
+   height: 50px;
+   margin-bottom: 40px;
+}
+
+.al-dia div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    
+}
+
+.al-dia div div {
+    border: 1px solid #64ce2e;
+    
+    border-radius: 10px;
+    
+}
+
+.boton-de-servicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 50px;
+    
+}
+
+.boton-de-servicio div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    
+}
+
+.boton-de-servicio div div {
+    
+    
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.boton-de-servicio div div button {
+    
+    font-size: 20px; 
+    border-radius: 10px;
+    outline: none;
+    background-color: #0b1721;
+    color: #fff;
+    height: 50px;
+    line-height: 25px;
+    width: 200px;
+    letter-spacing: 5px;
+    font-family: 'Open Sans', sans-serif !important;
+    cursor: pointer;
+   
+}
+
+
+
+.vencida-p {
+    color: red;
+    border : none !important;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    .tarjeta {
+        width: 100%;
+    }
+}
+
+

@@ -39,6 +39,7 @@ function saveUser (e) {
             saved : [],
             service: [],
             transaciones: [],
+            comprobantesServicios: [],
         }
     
         userList.push(newUser);

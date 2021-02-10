@@ -8,57 +8,63 @@ function logoutOff() {
     location.href = "../../public/user/index.html";
   }
 }
-
 let volver = document.getElementById("volver");
 volver.addEventListener("click", volverIndex2);
 function volverIndex2() {
   location.href = "../../public/user/index2.html";
 }
 
+//obtenemos el usuario en formato Json del local storage
+let localStoreUserJson = localStorage.getItem("user");
+// convertimos el usuario en formato Json de local storage en js
+let userJs = JSON.parse(localStoreUserJson);
+
 //obtenemos los usuarios en formato Json del local storage
 let localStoreUsersJson = localStorage.getItem("users");
 // convertimos los usuarios en formato Json de local storage en js
 let usersJs = JSON.parse(localStoreUsersJson);
 
-// mapeamos los cbu de usuarios para tenerlos en la consola
-let cbuMap = usersJs.map((value) => value.cbu);
-
-
-let inputCbu = document.getElementById("cbu-cuenta-terceros_input");
+// iputs
+let inputSelect = document.getElementById('select');
+let inputAGregarCbu = document.getElementById('agregar-cbu_span');
+let inputAGregarCbu2 = document.getElementById('agregar-cbu2_span')
 let inputMonto = document.getElementById("monto-cuenta-terceros_input");
 let inputMotivo = document.getElementById("razon-cuenta-terceros_input");
+let transferencias = document.getElementById('transferencias-form');
 
-let formDepositoCuentaTerceros = document.getElementById(
-  "cuenta-terceros-form"
-);
-formDepositoCuentaTerceros.addEventListener("submit", depositarTerceros);
 
+//---------- agregar cbu de terceros en <option>---------------------//
+// hacemos funcionar el boton agregarCbu que nos redidirigue a una nueva pagina
+inputAGregarCbu.addEventListener('click', funcionIrParaAgregarCbu);
+
+function funcionIrParaAgregarCbu () {
+    location.href = "../../public/user/agregarCbu.html";
+}
+
+console.log(inputSelect.value)
+inputSelect.innerHTML = `<option value="" class='opciones'></option>${userJs.saved.map((item)=> 
+  `<option value="${item.cbu}" class='opciones'>${item.cbu}</option>`
+)}`
+
+inputSelect.addEventListener('input', ponerNombreCompleto);
+function ponerNombreCompleto() {
+ let encontranombre =  usersJs.find(value => value.cbu === inputSelect.value);
+  let nombre = document.getElementById('nombre-cuenta-terceros_span');
+  let apellido = document.getElementById('apellido-cuenta-terceros_span');
+  nombre.innerHTML = `Nombre: ${encontranombre.name}`;
+  apellido.innerHTML = `Apellido: ${encontranombre.lastname}`
+}
+ let cuentatercerosbutton = document.getElementById('cuenta-terceros-button');
+
+
+transferencias.addEventListener('submit', depositarTerceros)
 function depositarTerceros(e) {
   e.preventDefault();
-  let existe = false;
-  usersJs.filter((value) => {
-    if (value.cbu === inputCbu.value) {
-      existe = true;
-    }
-  });
-  if (!existe) {
-    return alert("ese CBU no existe");
-  }
-
-  //obtenemos el usuario logueado en formato Json del local storage
-  let localStoreUserJson = localStorage.getItem("user");
-  // convertimos el usuario logueado en formato Json de local storage en js
-  let userJs = JSON.parse(localStoreUserJson);
-  let userCbu = userJs.cbu;
-  
-
-  if (inputCbu.value === userCbu) {
-    return alert("no puede ser tu cbu");
-  }
   if (userJs.balance < inputMonto.value) {
-    return alert("saldo insuficiente");
+    return alert("saldo insuficient");
   } else {
-    let usuarioASumar = usersJs.find((value) => value.cbu === inputCbu.value);
+    let usuarioASumar = usersJs.find((value) => value.cbu === inputSelect.value);
+    console.log(usersJs)
     let usuariobalance = Number(usuarioASumar.balance);
     let montoParaUsuario = Number(inputMonto.value);
     let sumatotal = usuariobalance + montoParaUsuario;
@@ -106,20 +112,14 @@ function depositarTerceros(e) {
 
     
     
-    // actualizar ahora el usuario
-
-    //obtenemos el usuario loguedo en formato Json del local storage
-    let localStoreJsonUsuario = localStorage.getItem("user");
-
-    // convertimos el usuario logueado de formato Json de local storage en js
-    let userJsUsuario = JSON.parse(localStoreJsonUsuario);
+ 
     
     // restamos de su balance
-    let usuarioLogBalance = Number(userJsUsuario.balance);
+    let usuarioLogBalance = Number(userJs.balance);
     let restatotal = usuarioLogBalance - montoParaUsuario;
     
     // actualizamos el objeto
-    userJsUsuario.balance = restatotal;
+    userJs.balance = restatotal;
     let objetoEgreso = {
       montoDeposito: inputMonto.value,
       motivoDeposito: inputMotivo.value,
@@ -128,11 +128,11 @@ function depositarTerceros(e) {
       hora: h.getHours() + ":" + h.getMinutes() + ":" + h.getSeconds(),
       movimiento: 'egreso para un tercero'
     };
-    userJsUsuario.transaciones.push(objetoEgreso)
+    userJs.transaciones.push(objetoEgreso)
     
     
     //  buscamos al usuario en el array con find()
-    let usuarioARestar = usersJs.find((value) => value.cbu === userJsUsuario.cbu);
+    let usuarioARestar = usersJs.find((value) => value.cbu === userJs.cbu);
     
     // indexamos
     let indexUsuarioLog = usersJs.indexOf(usuarioARestar);
@@ -141,19 +141,24 @@ function depositarTerceros(e) {
     usersJs.splice(indexUsuarioLog, 1)
     
     // push
-    usersJs.push(userJsUsuario);
+    usersJs.push(userJs);
+    
+
+    //
     
     /// convertimos el array de usuarios en formato json
     let userLogueado = JSON.stringify(usersJs);
     // pasamos el array en json a users en el localstorage
     localStorage.setItem("users", userLogueado);
     // convervetimos user en jso 
-    let userLogueadoUser = JSON.stringify(userJsUsuario);
+    let userLogueadoUser = JSON.stringify(userJs);
     localStorage.setItem('user', userLogueadoUser)
 
+    //
     inputMonto.value = '';
     inputMotivo.value = '';
     return alert('fue depositado con exito')
+    
 
     
   
