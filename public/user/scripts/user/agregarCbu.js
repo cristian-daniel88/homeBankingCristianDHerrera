@@ -5,13 +5,13 @@ function logoutOff() {
     // borrar usuario
     localStorage.removeItem("user");
     //ir a index
-    location.href = "../../public/user/index.html";
+    location.href = "../../index.html";
   }
 }
 let volver = document.getElementById("volver");
 volver.addEventListener("click", volverIndex2);
 function volverIndex2() {
-  location.href = "../../public/user/transferencias.html";
+  location.href = "../../transferencias.html";
 }
 
 //obtenemos el usuario en formato Json del local storage

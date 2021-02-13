@@ -38,7 +38,7 @@ let transferencias = document.getElementById('transferencias-form');
 inputAGregarCbu.addEventListener('click', funcionIrParaAgregarCbu);
 
 function funcionIrParaAgregarCbu () {
-    location.href = "../../public/user/agregarCbu.html";
+    location.href = "../../agregarCbu.html";
 }
 
 console.log(inputSelect.value)
