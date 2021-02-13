@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 *{
     font-family: 'Open Sans', sans-serif;
+    
 }
 
 body {
@@ -10,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color:  #0b1721;
-    margin-top: -100px;
+   
 }
 
 h1 {
@@ -27,3 +28,4 @@ a {
     text-decoration: none;
     color: #fff;
 }
+
