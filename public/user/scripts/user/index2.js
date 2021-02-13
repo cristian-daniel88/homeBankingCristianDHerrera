@@ -122,7 +122,7 @@ function funcionCuentaPropiaTarget(e) {
 document.addEventListener("click", funcionCuentaTercerosTarget);
 function funcionCuentaTercerosTarget(e) {
   if (e.target.id === "boton-cuenta-terceros_p") {
-    location.href = "../../public/user/depositoEnCuentaTerceros.html";
+    location.href = "../../depositoEnCuentaTerceros.html";
   }
 }
 
