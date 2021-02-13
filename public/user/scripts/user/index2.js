@@ -100,10 +100,10 @@ document.addEventListener("click", funcionDepositosTarget);
 function funcionDepositosTarget(e) {
   if (e.target.id === "boton-depositos_p") {
     caja2.innerHTML = ` <div class="cajita-a" data-character="cuenta-propia" id="cuenta-propia">
-            <div id="boton-cuenta-propia"><div id="boton-cuenta-propia_p">Cuenta propia</div></div>
+            <div id="boton-cuenta-propia"><p id="boton-cuenta-propia_p">Cuenta propia</p></div>
             </div>
             <div class="cajita-b" data-character="cuenta-terceros" id="cuenta-tereceros">
-            <div id="boton-cuenta-terceros"><div id="boton-cuenta-terceros_p">Cuenta terceros</div></div>
+            <div id="boton-cuenta-terceros"><p id="boton-cuenta-terceros_p">Cuenta terceros</p></div>
             </div>`;
     caja3.innerHTML = ``;
     return (volver.innerHTML = `<div id="volver-index2" data-character='volver-index2'> <span id='volver-index2b' class="icon-arrow-left" style="margin-right: 15px;"></span>Volver</div>`);
