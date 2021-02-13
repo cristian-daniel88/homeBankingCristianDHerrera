@@ -254,5 +254,9 @@ button {
         font-size: 25px;
         
     }
+    .content__user {
+        
+        margin-top: 100px;
+    }
 }
 
