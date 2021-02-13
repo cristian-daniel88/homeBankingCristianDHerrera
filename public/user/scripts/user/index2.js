@@ -22,19 +22,19 @@ function logoutOff() {
     // borrar usuario
     localStorage.removeItem("user");
     //ir a index
-    location.href = "../../public/user/index.html";
+    location.href = "./public/user/index.html";
   }
 }
 
 document.addEventListener("click", volverIndex2);
 function volverIndex2(e) {
   if (e.target.id === "volver-index2" || e.target.id === 'volver-index2b') {
-    caja2.innerHTML = ` <div class="cajita-a" data-character="consultas" id="consultas">
-        <div id="boton-consultas"   ><div id="boton-consultas_p" >Consultas</div></div>
-        </div>
-        <div class="cajita-b" data-character="servicios" id="servicios">
-        <div id="boton-servicios"><div id="boton-servicios_p">Servicios</div></div>
-        </div>`;
+    caja2.innerHTML = ` <div class="cajita-c" data-character="depositos" id="depositos">
+    <div id="boton-depositos"><div id="boton-depositos_p">Depositos</div></div>
+    </div>
+    <div class="cajita-d" data-character="transferencias" id="transferencias">
+    <div id="boton-transferencias"><div id="boton-transferencioas_p">Transferencias</div></div>
+    </div>`;
     caja3.innerHTML = ` <div class="cajita-c" data-character="depositos" id="depositos">
         <div id="boton-depositos"><div id="boton-depositos_p">Depositos</div></div>
         </div>
@@ -43,6 +43,12 @@ function volverIndex2(e) {
         </div>`;
     return (volver.innerHTML = ``);
   }
+  // ` <div class="cajita-a" data-character="consultas" id="consultas">
+  //       <div id="boton-consultas"   ><div id="boton-consultas_p" >Consultas</div></div>
+  //       </div>
+  //       <div class="cajita-b" data-character="servicios" id="servicios">
+  //       <div id="boton-servicios"><div id="boton-servicios_p">Servicios</div></div>
+  //       </div>`
 }
 let tituloSeccion = document.getElementById("seccion");
 tituloSeccion.innerHTML = `BIENVENID@ ${userJs.name.toUpperCase()}`;
