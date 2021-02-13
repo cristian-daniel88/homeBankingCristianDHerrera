@@ -253,10 +253,23 @@ button {
         width: 100%;
     }
 
+    .caja2 {
+        height: 100%;
+    }
+
     .off {
       
         font-size: 25px;
         
+    }
+    .content__user {
+        
+        margin-top: 200px;
+        
+    }
+    .container {
+        height: 800px;
+        padding-top: 250px;
     }
 }
 
