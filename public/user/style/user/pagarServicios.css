@@ -187,6 +187,9 @@ form {
     .tarjeta {
         width: 100%;
     }
+    .content {
+        width: 100%;
+    }
     .off {
       
         font-size: 25px;
