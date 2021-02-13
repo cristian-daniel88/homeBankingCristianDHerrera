@@ -60,15 +60,15 @@ function saveUser (e) {
 formElement.addEventListener('submit', (e)=> saveUser(e));
 
 // para que el navegador no autocomplete el formulario
-passwoordElement.style.display = 'none';
+// passwoordElement.style.display = 'none';
 
-passwoordElement.addEventListener('focus', () => {
-passwoordElement.style.display = 'flex'; 
-passwoordElement.value = '1'
-setTimeout(( ) =>{
-    passwoordElement.value = ''
-} ,0 )
-})
+// passwoordElement.addEventListener('focus', () => {
+// passwoordElement.style.display = 'flex'; 
+// passwoordElement.value = '1'
+// setTimeout(( ) =>{
+//     passwoordElement.value = ''
+// } ,0 )
+// })
 
 userElement.addEventListener('focus', () => {
     userElement.style.display = 'flex'; 
