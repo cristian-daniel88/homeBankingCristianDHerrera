@@ -167,7 +167,7 @@ function funcionAdherirServicios(e) {
 document.addEventListener("click", funcionPagarServicios);
 function funcionPagarServicios(e) {
   if (e.target.id === "boton-pagar-servicios_p") {
-    location.href = "../../public/user/pagarServicios.html";  
+    location.href = "../../pagarServicios.html";  
   }
 }
 
