@@ -58,12 +58,18 @@ let volver = document.getElementById("caja4");
 document.addEventListener("click", funcionConsultaTarget);
 function funcionConsultaTarget(e) {
   if (e.target.id === "boton-consultas_p") {
-    caja2.innerHTML = ` <div class="cajita-a" data-character="saldo" id="saldo">
-            <div id="boton-saldo"><div id="boton-saldo_p">Saldo</div></div>
-            </div>
-            <div class="cajita-b" data-character="cbu" id="cbu">
-            <div id="boton-cbu"><div id="boton-cbu_p">CBU</div></div>
-            </div>`;
+    caja2.innerHTML = `  <div class="cajita-a" data-character="consultas" id="consultas">
+    <div id="boton-consultas"><p id="boton-consultas_p">Consultas</p></div>
+    </div>
+    <div class="cajita-b" data-character="servicios" id="servicios">
+    <div id="boton-servicios"><p id="boton-servicios_p">Servicios</p></div>
+    </div>`;
+    // <div class="cajita-a" data-character="saldo" id="saldo">
+    // <div id="boton-saldo"><div id="boton-saldo_p">Saldo</div></div>
+    // </div>
+    // <div class="cajita-b" data-character="cbu" id="cbu">
+    // <div id="boton-cbu"><div id="boton-cbu_p">CBU</div></div>
+    // </div>
     caja3.innerHTML = ``;
     return (volver.innerHTML = `<div id="volver-index2" data-character='volver-index2'> <span id='volver-index2b' class="icon-arrow-left" style="margin-right: 15px;"></span>Volver</div>`);
   }
