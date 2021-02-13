@@ -195,6 +195,16 @@ form {
         font-size: 25px;
         
     }
+    .tarjeta {
+        min-width: 230px;
+        height: 317px;
+        color: #fff;
+        border: 1px solid #2ecece;
+        margin: 20px;
+        font-size: 18px;
+        border-radius: 20px;
+        list-style: none;
+    }
 }
 
 
