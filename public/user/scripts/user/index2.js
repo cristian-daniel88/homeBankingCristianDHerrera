@@ -183,7 +183,7 @@ function funcionMiscomprobantes(e) {
 document.addEventListener("click", funcionDesvincularServicio);
 function funcionDesvincularServicio(e) {
   if (e.target.id === "boton-desvincular-servicios_p") {
-    location.href = "../../public/user/desvincularServicio.html";  
+    location.href = "../../desvincularServicio.html";  
   }
 }
 
