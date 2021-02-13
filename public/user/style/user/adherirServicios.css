@@ -293,7 +293,7 @@ form {
  }
 
  #boton-adherir-servicios_p, #boton-desvincular-servicios_p, #boton-pagar-servicios_p, #boton-mis-comprobantes_p {
-     font-size: 15px;
+     font-size: 15px !important;
  }
 }
 
