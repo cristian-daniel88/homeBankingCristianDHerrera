@@ -148,10 +148,10 @@ button {
 
 @media screen and (max-width: 500px) {
     body {
-        padding-top: 265px;
+        padding-top: 200px;
     }
     h1 {
-        margin-bottom: 50px;
+        margin-bottom: 250px;
     }
     .content__user {
         width: 80vw;
