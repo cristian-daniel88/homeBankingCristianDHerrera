@@ -150,6 +150,9 @@ button {
     body {
         padding-top: 65px;
     }
+    h1 {
+        margin-bottom: 200px;
+    }
     .content__user {
         width: 80vw;
         height: 100vh;
