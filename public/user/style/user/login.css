@@ -148,16 +148,9 @@ button {
 
 @media screen and (max-width: 500px) {
     .content__user {
-        width: 500px;
+        width: 450px;
     }
-    body {
-        display: flex;
-        height: 100vh ;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color:  #0b1721;
-    }
+  
     
     .container {
        
