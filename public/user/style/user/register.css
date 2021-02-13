@@ -146,9 +146,12 @@ button {
 }
 
 @media screen and (max-width: 500px) {
+    body {
+        height: 150vh;
+    }
     .content__user {
         width: 80vw;
-        height: 120vh;
+        height: 160vh;
     }
   
     
