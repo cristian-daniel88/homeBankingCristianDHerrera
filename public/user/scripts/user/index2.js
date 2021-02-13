@@ -130,7 +130,7 @@ function funcionCuentaTercerosTarget(e) {
 document.addEventListener("click", funcionTransferencias);
 function funcionTransferencias(e) {
   if (e.target.id === "boton-transferencioas_p") {
-    location.href = "../../public/user/transferencias.html";
+    location.href = "../../transferencias.html";
   }
 }
 
