@@ -257,7 +257,10 @@ button {
     .content__user {
         
         margin-top: 200px;
-        height: auto;
+        
+    }
+    .container {
+        height: 100%;
     }
 }
 
