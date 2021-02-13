@@ -48,7 +48,7 @@ function saveUser (e) {
     
         localStorage.setItem('users', users);
 
-        location.href = '../../public/user/login.html'
+        location.href = '../../login.html'
         localStorage.removeItem('user');
     } else {
         registerErrorElement.style.display = 'block';

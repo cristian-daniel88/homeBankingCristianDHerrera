@@ -31,7 +31,7 @@ function loginUser (e) {
             if (userEl.user === user) {
                 if (userEl.password  === password )  {
                     match = true;
-                    location.href = './public/user/index2.html';
+                    location.href = './index2.html';
                     localStorage.setItem('user', JSON.stringify(userEl));
                     return
                 }
@@ -62,15 +62,15 @@ formElement.addEventListener('submit', (e)=> loginUser(e));
 
 
 // para que el navegador no autocomplete el formulario
-// passwordElement.style.display = 'none';
+passwordElement.style.display = 'none';
 
-// passwordElement.addEventListener('focus', () => {
-// passwordElement.style.display = 'flex'; 
-// passwordElement.value = '1'
-// setTimeout(( ) =>{
-//     passwordElement.value = ''
-// } ,0 )
-// })
+passwordElement.addEventListener('focus', () => {
+passwordElement.style.display = 'flex'; 
+passwordElement.value = '1'
+setTimeout(( ) =>{
+    passwordElement.value = ''
+} ,0 )
+})
 
 
 
