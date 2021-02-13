@@ -139,16 +139,16 @@ document.addEventListener("click", funcionServicios);
 function funcionServicios(e) {
   if (e.target.id === "boton-servicios_p") {
     caja2.innerHTML = ` <div class="cajita-a" data-character="adherir-servicios" id="adherir-servicios">
-    <div id="boton-adherir-servicios"   ><div id="boton-adherir-servicios_p" >Adherir Servicios</div></div>
+    <div id="boton-adherir-servicios"   ><p id="boton-adherir-servicios_p" >Adherir Servicios</p></div>
     </div>
     <div class="cajita-b" data-character="desvincular-servicios" id="desvincular-servicios">
-    <div id="boton-desvincular-servicios"><div id="boton-desvincular-servicios_p"> Desvincular Servicios</div></div>
+    <div id="boton-desvincular-servicios"><p id="boton-desvincular-servicios_p"> Desvincular Servicios</p></div>
     </div>`;
     caja3.innerHTML = ` <div class="cajita-c" data-character="pagar-servicios" id="pagar-servicios">
-    <div id="boton-pagar-servicios"><div id="boton-pagar-servicios_p">Pagar Servicios</div></div>
+    <div id="boton-pagar-servicios"><p id="boton-pagar-servicios_p">Pagar Servicios</p></div>
     </div>
     <div class="cajita-d" data-character="mis-comprobantes" id="mis-comprobantes">
-    <div id="boton-mis-comprobantes"><div id="boton-mis-comprobantes_p">Mis comprobantes</div></div>
+    <div id="boton-mis-comprobantes"><p id="boton-mis-comprobantes_p">Mis comprobantes</p></div>
     </div>`;
     return (volver.innerHTML = `<div id="volver-index2" data-character='volver-index2'> <span id='volver-index2b' class="icon-arrow-left" style="margin-right: 15px;"></span>Volver</div>`)
   }
