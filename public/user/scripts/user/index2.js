@@ -22,7 +22,7 @@ function logoutOff() {
     // borrar usuario
     localStorage.removeItem("user");
     //ir a index
-    location.href = "../../public/index.html";
+    location.href = "../../index.html";
   }
 }
 
