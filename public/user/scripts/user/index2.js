@@ -159,7 +159,7 @@ function funcionServicios(e) {
 document.addEventListener("click", funcionAdherirServicios);
 function funcionAdherirServicios(e) {
   if (e.target.id === "boton-adherir-servicios_p") {
-    location.href = "../../public/user/adherirServicios.html";  
+    location.href = "../../adherirServicios.html";  
   }
 }
 
