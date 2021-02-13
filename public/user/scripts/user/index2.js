@@ -114,7 +114,7 @@ function funcionDepositosTarget(e) {
 document.addEventListener("click", funcionCuentaPropiaTarget);
 function funcionCuentaPropiaTarget(e) {
   if (e.target.id === "boton-cuenta-propia_p") {
-    location.href = "../../public/user/depositoEnCuentaPropia.html";
+    location.href = "../../depositoEnCuentaPropia.html";
   }
 }
 
