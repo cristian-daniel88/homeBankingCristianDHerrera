@@ -35,7 +35,7 @@ function volverIndex2(e) {
     <div class="cajita-b" data-character="servicios" id="servicios">
     <div id="boton-servicios"><div id="boton-servicios_p">Servicios</div></div>
     </div>`;
-    caja3.innerHTML = ` <div class="cajita-c" data-character="depositos" id="depositos" style="margin-bottom: 40px;">
+    caja3.innerHTML = ` <div class="cajita-c" data-character="depositos" id="depositos" style="margin-bottom: 40px !important;">
         <div id="boton-depositos"><div id="boton-depositos_p">Depositos</div></div>
         </div>
         <div class="cajita-d" data-character="transferencias" id="transferencias">
