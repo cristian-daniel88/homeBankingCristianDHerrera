@@ -269,6 +269,9 @@ form {
 
 
 @media screen and (max-width: 500px) {
+    .container {
+        padding-top: 100px;
+    }
     .bienvenido {
         margin-bottom: 100px;
     }
