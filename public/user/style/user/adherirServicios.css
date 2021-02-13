@@ -270,7 +270,7 @@ form {
 
 @media screen and (max-width: 500px) {
     .container {
-        padding-top: 100px;
+        padding-top: 200px !important;
     }
     .bienvenido {
         margin-bottom: 100px;
