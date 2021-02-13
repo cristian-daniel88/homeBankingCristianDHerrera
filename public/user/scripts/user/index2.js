@@ -29,7 +29,7 @@ function logoutOff() {
 document.addEventListener("click", volverIndex2);
 function volverIndex2(e) {
   if (e.target.id === "volver-index2" || e.target.id === 'volver-index2b') {
-    caja2.innerHTML = ` <div class="cajita-a" data-character="consultas" id="consultas">
+    caja2.innerHTML = ` <div class="cajita-a" data-character="consultas" id="consultas" style="margin-bottom: 50px;">
     <div id="boton-consultas"   ><div id="boton-consultas_p" >Consultas</div></div>
     </div>
     <div class="cajita-b" data-character="servicios" id="servicios">
