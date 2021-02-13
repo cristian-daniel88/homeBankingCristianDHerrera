@@ -31,7 +31,7 @@ function loginUser (e) {
             if (userEl.user === user) {
                 if (userEl.password  === password )  {
                     match = true;
-                    location.href = '../../public/user/index2.html';
+                    location.href = './public/user/index2.html';
                     localStorage.setItem('user', JSON.stringify(userEl));
                     return
                 }
