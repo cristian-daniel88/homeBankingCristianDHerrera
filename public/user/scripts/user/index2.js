@@ -175,7 +175,7 @@ function funcionPagarServicios(e) {
 document.addEventListener("click", funcionMiscomprobantes);
 function funcionMiscomprobantes(e) {
   if (e.target.id === "boton-mis-comprobantes_p") {
-    location.href = "../../public/user/misComprobantes.html";  
+    location.href = "../../misComprobantes.html";  
   }
 }
 
