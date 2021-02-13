@@ -148,7 +148,7 @@ button {
 
 @media screen and (max-width: 500px) {
     .content__user {
-        width: 77vw;
+        width: 100%;
     }
     body {
         display: flex;
