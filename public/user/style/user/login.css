@@ -157,6 +157,10 @@ button {
         width: 80vw;
         height: 100vh;
     }
+
+    .p-form {
+        height: 150px;
+    }
   
     
     .container {
